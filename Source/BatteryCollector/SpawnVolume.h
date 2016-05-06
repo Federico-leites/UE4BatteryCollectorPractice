@@ -37,6 +37,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spawning")
 	float SpawnDelayRangeHigh;
 
+	/** Function that toggles spawn volume */
+	UFUNCTION(BlueprintCallable, Category = "Spawning")
+	void SetSpawningActive(bool bShouldSpawn);
+
 protected:
 	/** The pickup to spawn */
 	UPROPERTY(EditAnywhere, Category = "Spawning")
